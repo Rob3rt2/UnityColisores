@@ -565,3 +565,12 @@ Diferente do Static Collider, este colisor possui RigidBody, um comum não um ci
 Em nossa cena, adicionamos esse colisor em um bola que está em um dos caminhos do labirinto.
 
 ![colisor RIGIDBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ce1b033d-438e-4fdf-8f5d-aeb276546cf6)
+
+# Kinematic Rigidbody Collider
+O mais complexo até então o Kinematic Rigidbody é um colisor que possui a propriedade IsKinematic do Rigidbody ativada, a partir de um script você pode mover um objeto que tenha este colisor com uma modificação de scripts em seu componente transform isso faz com que ele se mova, mas não respondera as forças como um Kinematic Rigidbody. 
+
+Em nossa cena, adicionamos um carro modelado por nós no software Blender, para demonstrar a aplicação do colisor.
+
+![colisor KINEMATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/973d8089-b653-4008-8339-60ae193bcec8)
+
+
