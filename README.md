@@ -567,10 +567,18 @@ Em nossa cena, adicionamos esse colisor em um bola que está em um dos caminhos 
 ![colisor RIGIDBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ce1b033d-438e-4fdf-8f5d-aeb276546cf6)
 
 # Kinematic Rigidbody Collider
-O mais complexo até então o Kinematic Rigidbody é um colisor que possui a propriedade IsKinematic do Rigidbody ativada, a partir de um script você pode mover um objeto que tenha este colisor com uma modificação de scripts em seu componente transform isso faz com que ele se mova, mas não respondera as forças como um Kinematic Rigidbody. 
+O mais complexo até então o Kinematic Rigidbody é um colisor que possui a propriedade IsKinematic do Rigidbody ativada, a partir de um script você pode mover um objeto que tenha este colisor com uma modificação de scripts em seu componente transform isso faz com que ele se mova, mas não respondera as forças como um Kinematic Rigidbody. Seu uso é feito normalmente em colisores que tem a atividade de serem ativados, desativados ou movidos, tudo isso para que ele se comporte como um colisor estático, exemplo, é como algo que parado ele faz seu trabalho, mas quando necessário ele se movimenta e pode até ativar outros colisores ao seu redor. 
 
 Em nossa cena, adicionamos um carro modelado por nós no software Blender, para demonstrar a aplicação do colisor.
 
 ![colisor KINEMATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/973d8089-b653-4008-8339-60ae193bcec8)
+
+# Static Trigger Collider
+O Static Trigger Collider funciona da mesma forma que um Static Collider padrão, porém com diferença de que durante a colisão não haverá a física inserida como normalmente seria, e sim alguma ação definida pelo usuário no script. 
+
+Em nossa cena, adicionamos um quadro verde que com a colisão do player o quadro irá cair.
+
+![trigger STATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/7813e006-dcb9-471e-9a5e-1761430363a0)
+
 
 
