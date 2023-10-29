@@ -586,3 +586,10 @@ Este Trigger Collider tem a física aplicada ao seu objeto normalmente, mas dura
 Em nossa cena, adicionamos uma forma vermelha brilhante em um dos caminhos do labirinto.
 
 ![Trigger RIGIDIBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ccd6395a-8c5c-4e3f-8b27-e1a873110786)
+
+# Kinematic Rigidbody Trigger Collide
+Também funcionando como o seu colisor padrão sem Trigger, este colisor apresenta as mesmas diferenças que os outros colisores com Trigger, sendo um Kinematic Rigidbody, ele não sofre com a gravidade e com a física de outras colisões e sim o usuário o controla com um movimento programático. Sua Trigger funciona como todas as outras não tem efeito da física ao entrar na área de outro colisor e sim uma ação definida no script durante o tempo em que ele se mante na área de colisão do outro a partir do evento OnTriggerEnter, e depois volta ao normal quando sai da área do colisor com o evento OnTriggerExit.
+
+Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verde.
+
+![trigger STATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/fe7b0d17-95a5-4204-81ad-e591fe89e7fb)
