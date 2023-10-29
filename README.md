@@ -543,3 +543,19 @@ e jumpHeight (altura do salto). A variável physicalCC deve ser atribuída com u
 **Método *Update()*:** O método Update() é chamado a cada quadro e lida com a entrada do jogador. Se o jogador estiver no chão, a entrada é usada para controlar o movimento do jogador e o salto. O movimento é definido em physicalCC.moveInput e o salto é ativado definindo physicalCC.inertiaVelocity.y como a altura do salto.
 
 **Método *sitDown()*:** O método sitDown() é uma rotina que lida com a ação de sentar-se do jogador. Ele ajusta a altura do personagem e a escala do corpo gradualmente para criar uma animação suave. A velocidade e altura do salto também são ajustadas com base no estado de sentar-se.
+
+# SkyBox
+Adicionamos um Asset para personalizarmos o ambiente. 
+
+![SKYBOX](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ac216d12-93e7-43a6-921f-b0fe601150f0)
+
+# Adicionando os Colisores 
+A aplicação dos colisores é o tema principal do nosso projeto. Utilizamos eles adicionando alguns objetos em nossa cena, que a seguir vamos mostrar.
+
+# Static Collider
+Em primeiro plano, vamos abordar sobre o Static Collider. Muito utilizado para a criação do cenário, o colisor estático foi adicionado nas paredes e chão do ambiente. O Static Collider é usados para criar uma geometria de nível para que sempre permaneça no mesmo lugar, não possui nenhuma física aplicada por Rigidbody como os outros, mas é bem importante e principal na construção dos cenários.
+
+Em nossa cena, utilizamos esse colisor no mapa.
+
+![MAPA CIMA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/cebfacad-e906-40db-8ac9-de2de3ac2223)
+
