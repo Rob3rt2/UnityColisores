@@ -559,3 +559,9 @@ Em nossa cena, utilizamos esse colisor no mapa.
 
 ![MAPA CIMA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/cebfacad-e906-40db-8ac9-de2de3ac2223)
 
+# Rigidbody Collider
+Diferente do Static Collider, este colisor possui RigidBody, um comum não um cinemático anexado, por ter um RigidBody este colisor é completamente simulado pelos mecanismos de física, fazendo com que possam reagir a colisões e certas forças aplicadas a eles, como alguma batida, queda ou interação do jogador com o objeto em que está inserido, tudo isso feito a partir de nosso Script.
+
+Em nossa cena, adicionamos esse colisor em um bola que está em um dos caminhos do labirinto.
+
+![colisor RIGIDBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ce1b033d-438e-4fdf-8f5d-aeb276546cf6)
