@@ -395,3 +395,151 @@ O script consiste nos seguintes componentes principais:
 
 **Método *OnControllerColliderHit()*:** Esse método é chamado quando o controlador de personagem colide com outro objeto. Ele verifica se há uma colisão aplicável e adiciona uma força de empurrão ao objeto colidido.
 
+# Entrada do Player 
+![CENA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/69d2cf03-39e3-4f33-8097-191333dce8be)
+
+Este script controla a entrada do jogador no Unity. Ele lida com o movimento do jogador, saltos e ação de sentar-se.
+
+# Recursos:
+
+- Movimento suave baseado na entrada do jogador
+
+- Salto controlado pelo pressionamento da tecla de espaço
+
+- Ação de sentar-se ao pressionar a tecla C
+
+# Como usar:
+1. Anexe o script PlayerInput a um objeto no Unity que represente o jogador.
+
+2. Certifique-se de ter um componente PhysicalCC anexado ao objeto do jogador.
+
+3. Atribua a referência do componente PhysicalCC à variável physicalCC no inspector.
+
+4. Opcionalmente, configure as variáveis speed (velocidade do jogador) e jumpHeight (altura do salto) no inspector.
+
+5. Se necessário, ajuste a variável bodyRender para a renderização do corpo do jogador no inspector.
+
+6. Execute o jogo e teste o movimento, saltos e ação de sentar-se do jogador.
+
+# Descrição do Script
+
+csharp
+
+using System.Collections;
+
+using UnityEngine;
+
+public class PlayerInput : MonoBehaviour
+
+{
+
+public float speed = 5;
+
+public float jumpHeight = 15;
+
+public PhysicalCC physicalCC;
+
+public Transform bodyRender;
+
+private IEnumerator sitCort;
+
+private bool isSitting;
+
+private void Update()
+
+{
+
+if (physicalCC.isGround)
+
+{
+
+physicalCC.moveInput = Vector3.ClampMagnitude(transform.forward * Input.GetAxis("Vertical") +
+
+transform.right * Input.GetAxis("Horizontal"), 1f) * speed;
+
+if (Input.GetKeyDown(KeyCode.Space))
+
+{
+
+physicalCC.inertiaVelocity.y = 0f;
+
+physicalCC.inertiaVelocity.y += jumpHeight;
+
+}
+
+if (Input.GetKeyDown(KeyCode.C) && sitCort == null)
+
+{
+
+sitCort = sitDown();
+
+StartCoroutine(sitCort);
+
+}
+
+}
+
+}
+
+private IEnumerator sitDown()
+
+{
+
+if (isSitting && Physics.Raycast(transform.position, Vector3.up, physicalCC.cc.height * 1.5f))
+
+{
+
+sitCort = null;
+
+yield break;
+
+}
+
+isSitting = !isSitting;
+
+float t = 0;
+
+float startSize = physicalCC.cc.height;
+
+float finalSize = isSitting ? physicalCC.cc.height / 2 : physicalCC.cc.height * 2;
+
+Vector3 startBodySize = bodyRender.localScale;
+
+Vector3 finalBodySize = isSitting ? bodyRender.localScale - Vector3.up * bodyRender.localScale.y / 2f : bodyRender.localScale + Vector3.up * bodyRender.localScale.y;
+
+speed = isSitting ? speed / 2 : speed * 2;
+
+jumpHeight = isSitting ? jumpHeight * 3 : jumpHeight / 3;
+
+while (t < 0.2f)
+
+{
+
+t += Time.deltaTime;
+
+physicalCC.cc.height = Mathf.Lerp(startSize, finalSize, t / 0.2f);
+
+bodyRender.localScale = Vector3.Lerp(startBodySize, finalBodySize, t / 0.2f);
+
+yield return null;
+
+}
+
+sitCort = null;
+
+yield break;
+
+}
+
+}
+
+O script consiste nos seguintes componentes principais:
+
+**Variáveis *Públicas*:** Essas variáveis podem ser configuradas no Editor do Unity e controlam o comportamento da entrada do jogador. Elas incluem speed (velocidade do jogador)
+e jumpHeight (altura do salto). A variável physicalCC deve ser atribuída com uma referência ao componente PhysicalCC que lida com a física do personagem.
+
+**Variáveis *Privadas*:** Essas variáveis são usadas internamente pelo script para controlar a ação de sentar-se. A variável bodyRender é opcional e pode ser configurada para a renderização do corpo do jogador.
+
+**Método *Update()*:** O método Update() é chamado a cada quadro e lida com a entrada do jogador. Se o jogador estiver no chão, a entrada é usada para controlar o movimento do jogador e o salto. O movimento é definido em physicalCC.moveInput e o salto é ativado definindo physicalCC.inertiaVelocity.y como a altura do salto.
+
+**Método *sitDown()*:** O método sitDown() é uma rotina que lida com a ação de sentar-se do jogador. Ele ajusta a altura do personagem e a escala do corpo gradualmente para criar uma animação suave. A velocidade e altura do salto também são ajustadas com base no estado de sentar-se.
