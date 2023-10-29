@@ -580,5 +580,9 @@ Em nossa cena, adicionamos um quadro verde que com a colisão do player o quadro
 
 ![trigger STATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/7813e006-dcb9-471e-9a5e-1761430363a0)
 
+# Rigidbody Trigger Collider
+Este Trigger Collider tem a física aplicada ao seu objeto normalmente, mas durante uma colisão ele não terá a física da colisão aplicada ao momento, por exemplo o objeto pode ter ação física da queda, contudo a resposta física ao entrar na área de colisão de outro colisor não existira, em seu lugar terá uma ação denominada pelo programador no script.
 
+Em nossa cena, adicionamos uma forma vermelha brilhante em um dos caminhos do labirinto.
 
+![Trigger RIGIDIBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ccd6395a-8c5c-4e3f-8b27-e1a873110786)
