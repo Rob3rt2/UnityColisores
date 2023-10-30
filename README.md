@@ -389,11 +389,11 @@ O script consiste nos seguintes componentes principais:
 
 - **Variáveis *Públicas*:** Essas variáveis podem ser configuradas no Editor do Unity e controlam o comportamento do controlador de personagem físico. Elas incluem cc (uma referência ao CharacterController), isGround (uma flag indicando se o personagem está no chão), groundAngle (o ângulo do terreno), groundNormal (o vetor normal do terreno), moveInput (o input de movimento), slopeLimit (o limite de inclinação em que o personagem pode se mover), inertiaDampingTime (o tempo de desaceleração da inércia), slopeStartForce (a força inicial ao subir uma rampa) e applyCollision (uma flag indicando se a colisão deve ser aplicada).
 
-**Métodos *Update()* e *GravityUpdate()*:** O método Update() é chamado a cada quadro e lida com a movimentação do personagem. Ele chama outros métodos para verificar o contato com o solo, atualizar a gravidade, aplicar a inércia e interagir com plataformas. O método GravityUpdate() calcula a força de gravidade aplicada ao personagem com base na inclinação do terreno.
+- **Métodos *Update()* e *GravityUpdate()*:** O método Update() é chamado a cada quadro e lida com a movimentação do personagem. Ele chama outros métodos para verificar o contato com o solo, atualizar a gravidade, aplicar a inércia e interagir com plataformas. O método GravityUpdate() calcula a força de gravidade aplicada ao personagem com base na inclinação do terreno.
 
-**Métodos *InertiaDamping()* e *GroundCheck()*:** O método InertiaDamping() desacelera a inércia do personagem quando uma força de movimento é aplicada. O método GroundCheck() verifica se o personagem está no chão, calcula o ângulo do terreno e armazena o vetor normal do terreno.
+- **Métodos *InertiaDamping()* e *GroundCheck()*:** O método InertiaDamping() desacelera a inércia do personagem quando uma força de movimento é aplicada. O método GroundCheck() verifica se o personagem está no chão, calcula o ângulo do terreno e armazena o vetor normal do terreno.
 
-**Método *OnControllerColliderHit()*:** Esse método é chamado quando o controlador de personagem colide com outro objeto. Ele verifica se há uma colisão aplicável e adiciona uma força de empurrão ao objeto colidido.
+- **Método *OnControllerColliderHit()*:** Esse método é chamado quando o controlador de personagem colide com outro objeto. Ele verifica se há uma colisão aplicável e adiciona uma força de empurrão ao objeto colidido.
 
 # Entrada do Player 
 ![CENA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/69d2cf03-39e3-4f33-8097-191333dce8be)
@@ -535,14 +535,14 @@ yield break;
 
 O script consiste nos seguintes componentes principais:
 
-**Variáveis *Públicas*:** Essas variáveis podem ser configuradas no Editor do Unity e controlam o comportamento da entrada do jogador. Elas incluem speed (velocidade do jogador)
+- **Variáveis *Públicas*:** Essas variáveis podem ser configuradas no Editor do Unity e controlam o comportamento da entrada do jogador. Elas incluem speed (velocidade do jogador)
 e jumpHeight (altura do salto). A variável physicalCC deve ser atribuída com uma referência ao componente PhysicalCC que lida com a física do personagem.
 
-**Variáveis *Privadas*:** Essas variáveis são usadas internamente pelo script para controlar a ação de sentar-se. A variável bodyRender é opcional e pode ser configurada para a renderização do corpo do jogador.
+- **Variáveis *Privadas*:** Essas variáveis são usadas internamente pelo script para controlar a ação de sentar-se. A variável bodyRender é opcional e pode ser configurada para a renderização do corpo do jogador.
 
-**Método *Update()*:** O método Update() é chamado a cada quadro e lida com a entrada do jogador. Se o jogador estiver no chão, a entrada é usada para controlar o movimento do jogador e o salto. O movimento é definido em physicalCC.moveInput e o salto é ativado definindo physicalCC.inertiaVelocity.y como a altura do salto.
+- **Método *Update()*:** O método Update() é chamado a cada quadro e lida com a entrada do jogador. Se o jogador estiver no chão, a entrada é usada para controlar o movimento do jogador e o salto. O movimento é definido em physicalCC.moveInput e o salto é ativado definindo physicalCC.inertiaVelocity.y como a altura do salto.
 
-**Método *sitDown()*:** O método sitDown() é uma rotina que lida com a ação de sentar-se do jogador. Ele ajusta a altura do personagem e a escala do corpo gradualmente para criar uma animação suave. A velocidade e altura do salto também são ajustadas com base no estado de sentar-se.
+- **Método *sitDown()*:** O método sitDown() é uma rotina que lida com a ação de sentar-se do jogador. Ele ajusta a altura do personagem e a escala do corpo gradualmente para criar uma animação suave. A velocidade e altura do salto também são ajustadas com base no estado de sentar-se.
 
 # SkyBox
 Adicionamos um Asset para personalizarmos o ambiente. 
@@ -551,6 +551,9 @@ Adicionamos um Asset para personalizarmos o ambiente.
 
 # Adicionando os Colisores 
 A aplicação dos colisores é o tema principal do nosso projeto. Utilizamos eles adicionando alguns objetos em nossa cena, que a seguir vamos mostrar.
+- Script de declaração de código.
+
+![SCRIPT DE DECLARAÇAO](https://github.com/Rob3rt2/UnityColisores/assets/128638269/dc73eb29-48e6-41b7-846b-b757dea2958e)
 
 # Static Collider
 Em primeiro plano, vamos abordar sobre o Static Collider. Muito utilizado para a criação do cenário, o colisor estático foi adicionado nas paredes e chão do ambiente. O Static Collider é usados para criar uma geometria de nível para que sempre permaneça no mesmo lugar, não possui nenhuma física aplicada por Rigidbody como os outros, mas é bem importante e principal na construção dos cenários.
@@ -558,9 +561,6 @@ Em primeiro plano, vamos abordar sobre o Static Collider. Muito utilizado para a
 Em nossa cena, utilizamos esse colisor no mapa.
 
 ![MAPA CIMA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/cebfacad-e906-40db-8ac9-de2de3ac2223)
-
-- Script em C#:
-
 
 # Rigidbody Collider
 Diferente do Static Collider, este colisor possui RigidBody, um comum não um cinemático anexado, por ter um RigidBody este colisor é completamente simulado pelos mecanismos de física, fazendo com que possam reagir a colisões e certas forças aplicadas a eles, como alguma batida, queda ou interação do jogador com o objeto em que está inserido, tudo isso feito a partir de nosso Script.
@@ -570,6 +570,9 @@ Em nossa cena, adicionamos esse colisor em um bola que está em um dos caminhos 
 ![colisor RIGIDBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ce1b033d-438e-4fdf-8f5d-aeb276546cf6)
 
 - Script em C#:
+  
+![RIGDBODY COLLIDER](https://github.com/Rob3rt2/UnityColisores/assets/128638269/eaf55e94-b32b-4643-bc38-27e59606e867)
+
 
 # Kinematic Rigidbody Collider
 O mais complexo até então o Kinematic Rigidbody é um colisor que possui a propriedade IsKinematic do Rigidbody ativada, a partir de um script você pode mover um objeto que tenha este colisor com uma modificação de scripts em seu componente transform isso faz com que ele se mova, mas não respondera as forças como um Kinematic Rigidbody. Seu uso é feito normalmente em colisores que tem a atividade de serem ativados, desativados ou movidos, tudo isso para que ele se comporte como um colisor estático, exemplo, é como algo que parado ele faz seu trabalho, mas quando necessário ele se movimenta e pode até ativar outros colisores ao seu redor. 
@@ -579,8 +582,11 @@ Em nossa cena, adicionamos um carro modelado por nós no software Blender, para 
 ![colisor KINEMATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/973d8089-b653-4008-8339-60ae193bcec8)
 
 - Script em C#: ENTRADA
+  
+![KINEMATIC COLLIDER ENTRADA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/d454d31f-1538-4931-ae8b-d00f2369331c)
 
 - Script em C#: SAÍDA
+  
 ![script KINEMATIC COLLIDER SAIDA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/dca83edf-1680-4313-9140-834b7263def1)
 
 
@@ -593,6 +599,8 @@ Em nossa cena, adicionamos um quadro verde que com a colisão do player o quadro
 
 - Script em C#:
 
+![STATIC TRIGGER](https://github.com/Rob3rt2/UnityColisores/assets/128638269/641cfa40-4c4d-477b-b205-cb02cf026186)
+
 # Rigidbody Trigger Collider
 Este Trigger Collider tem a física aplicada ao seu objeto normalmente, mas durante uma colisão ele não terá a física da colisão aplicada ao momento, por exemplo o objeto pode ter ação física da queda, contudo a resposta física ao entrar na área de colisão de outro colisor não existira, em seu lugar terá uma ação denominada pelo programador no script.
 
@@ -601,15 +609,25 @@ Em nossa cena, adicionamos uma forma vermelha brilhante em um dos caminhos do la
 ![Trigger RIGIDIBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ccd6395a-8c5c-4e3f-8b27-e1a873110786)
 
 - Script em C#: ENTRADA
-
+  
 ![script RIGIDBODY TRIGGER ENTRADA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/f5a7a745-2f58-4919-8472-552b81587d87)
 
 - Script em C#: SAÍDA
-
+  
+![RIGIDBODY TRIGGER SAIDA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/c4247fa2-334c-499f-b0e5-b863e79465b2)
 
 # Kinematic Rigidbody Trigger Collide
 Também funcionando como o seu colisor padrão sem Trigger, este colisor apresenta as mesmas diferenças que os outros colisores com Trigger, sendo um Kinematic Rigidbody, ele não sofre com a gravidade e com a física de outras colisões e sim o usuário o controla com um movimento programático. Sua Trigger funciona como todas as outras não tem efeito da física ao entrar na área de outro colisor e sim uma ação definida no script durante o tempo em que ele se mante na área de colisão do outro a partir do evento OnTriggerEnter, e depois volta ao normal quando sai da área do colisor com o evento OnTriggerExit.
 
 Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verde.
-<img src =
-- Script em C#:
+
+![LAMPADA TETO](https://github.com/Rob3rt2/UnityColisores/assets/128638269/56bbdf55-61db-4f18-b296-7b2ca1a3f30e)
+
+- Script em C#: ENTRADA
+  
+![KINEMATIC TRIGGER ENTRADA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/308a1c0e-79dc-4615-9c21-e1a8647fca58)
+
+- Script em C#: SAÍDA
+  
+![KINEMATIC TRIGGER SAIDA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/12a3186f-cd4a-4932-810c-46dcb87b46ec)
+
