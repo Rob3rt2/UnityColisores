@@ -15,7 +15,7 @@ Para ver essa cena, é preciso o Unity com a versão 2022.2.16f1
 1. Clonar o projeto (Pasta está zipada para preservação do projeto construído na Unity, possuindo Scripts no C# e o projeto da Unity).
 - Link da pasta no Drive : https://drive.google.com/drive/folders/1rYuQksweBlwN2JRGTPiba1RAJaxoatsK?usp=sharing
 2. Assistir Gameplay disponível no Youtube.
-- Link do Youtube
+- Link do Youtube: https://youtu.be/SJmjQH2aDbo
 3. Abrir o projeto no Unity.
 # Desenvolvimento - Assets 
 Para criar esse projeto foram utilizados os seguintes passos:
