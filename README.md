@@ -561,6 +561,7 @@ Em nossa cena, utilizamos esse colisor no mapa.
 
 - Script em C#:
 
+
 # Rigidbody Collider
 Diferente do Static Collider, este colisor possui RigidBody, um comum não um cinemático anexado, por ter um RigidBody este colisor é completamente simulado pelos mecanismos de física, fazendo com que possam reagir a colisões e certas forças aplicadas a eles, como alguma batida, queda ou interação do jogador com o objeto em que está inserido, tudo isso feito a partir de nosso Script.
 
@@ -601,7 +602,5 @@ Em nossa cena, adicionamos uma forma vermelha brilhante em um dos caminhos do la
 Também funcionando como o seu colisor padrão sem Trigger, este colisor apresenta as mesmas diferenças que os outros colisores com Trigger, sendo um Kinematic Rigidbody, ele não sofre com a gravidade e com a física de outras colisões e sim o usuário o controla com um movimento programático. Sua Trigger funciona como todas as outras não tem efeito da física ao entrar na área de outro colisor e sim uma ação definida no script durante o tempo em que ele se mante na área de colisão do outro a partir do evento OnTriggerEnter, e depois volta ao normal quando sai da área do colisor com o evento OnTriggerExit.
 
 Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verde.
-
-![trigger STATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/fe7b0d17-95a5-4204-81ad-e591fe89e7fb)
-
+<img src =
 - Script em C#:
