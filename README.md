@@ -559,12 +559,16 @@ Em nossa cena, utilizamos esse colisor no mapa.
 
 ![MAPA CIMA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/cebfacad-e906-40db-8ac9-de2de3ac2223)
 
+- Script em C#:
+
 # Rigidbody Collider
 Diferente do Static Collider, este colisor possui RigidBody, um comum não um cinemático anexado, por ter um RigidBody este colisor é completamente simulado pelos mecanismos de física, fazendo com que possam reagir a colisões e certas forças aplicadas a eles, como alguma batida, queda ou interação do jogador com o objeto em que está inserido, tudo isso feito a partir de nosso Script.
 
 Em nossa cena, adicionamos esse colisor em um bola que está em um dos caminhos do labirinto.
 
 ![colisor RIGIDBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ce1b033d-438e-4fdf-8f5d-aeb276546cf6)
+
+- Script em C#:
 
 # Kinematic Rigidbody Collider
 O mais complexo até então o Kinematic Rigidbody é um colisor que possui a propriedade IsKinematic do Rigidbody ativada, a partir de um script você pode mover um objeto que tenha este colisor com uma modificação de scripts em seu componente transform isso faz com que ele se mova, mas não respondera as forças como um Kinematic Rigidbody. Seu uso é feito normalmente em colisores que tem a atividade de serem ativados, desativados ou movidos, tudo isso para que ele se comporte como um colisor estático, exemplo, é como algo que parado ele faz seu trabalho, mas quando necessário ele se movimenta e pode até ativar outros colisores ao seu redor. 
@@ -573,12 +577,16 @@ Em nossa cena, adicionamos um carro modelado por nós no software Blender, para 
 
 ![colisor KINEMATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/973d8089-b653-4008-8339-60ae193bcec8)
 
+- Script em C#:
+
 # Static Trigger Collider
 O Static Trigger Collider funciona da mesma forma que um Static Collider padrão, porém com diferença de que durante a colisão não haverá a física inserida como normalmente seria, e sim alguma ação definida pelo usuário no script. 
 
 Em nossa cena, adicionamos um quadro verde que com a colisão do player o quadro irá cair.
 
 ![trigger STATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/7813e006-dcb9-471e-9a5e-1761430363a0)
+
+- Script em C#:
 
 # Rigidbody Trigger Collider
 Este Trigger Collider tem a física aplicada ao seu objeto normalmente, mas durante uma colisão ele não terá a física da colisão aplicada ao momento, por exemplo o objeto pode ter ação física da queda, contudo a resposta física ao entrar na área de colisão de outro colisor não existira, em seu lugar terá uma ação denominada pelo programador no script.
@@ -587,9 +595,13 @@ Em nossa cena, adicionamos uma forma vermelha brilhante em um dos caminhos do la
 
 ![Trigger RIGIDIBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ccd6395a-8c5c-4e3f-8b27-e1a873110786)
 
+- Script em C#:
+
 # Kinematic Rigidbody Trigger Collide
 Também funcionando como o seu colisor padrão sem Trigger, este colisor apresenta as mesmas diferenças que os outros colisores com Trigger, sendo um Kinematic Rigidbody, ele não sofre com a gravidade e com a física de outras colisões e sim o usuário o controla com um movimento programático. Sua Trigger funciona como todas as outras não tem efeito da física ao entrar na área de outro colisor e sim uma ação definida no script durante o tempo em que ele se mante na área de colisão do outro a partir do evento OnTriggerEnter, e depois volta ao normal quando sai da área do colisor com o evento OnTriggerExit.
 
 Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verde.
 
 ![trigger STATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/fe7b0d17-95a5-4204-81ad-e591fe89e7fb)
+
+- Script em C#:
