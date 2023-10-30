@@ -578,7 +578,11 @@ Em nossa cena, adicionamos um carro modelado por nós no software Blender, para 
 
 ![colisor KINEMATIC](https://github.com/Rob3rt2/UnityColisores/assets/128638269/973d8089-b653-4008-8339-60ae193bcec8)
 
-- Script em C#:
+- Script em C#: ENTRADA
+
+- Script em C#: SAÍDA
+![script KINEMATIC COLLIDER SAIDA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/dca83edf-1680-4313-9140-834b7263def1)
+
 
 # Static Trigger Collider
 O Static Trigger Collider funciona da mesma forma que um Static Collider padrão, porém com diferença de que durante a colisão não haverá a física inserida como normalmente seria, e sim alguma ação definida pelo usuário no script. 
@@ -596,7 +600,12 @@ Em nossa cena, adicionamos uma forma vermelha brilhante em um dos caminhos do la
 
 ![Trigger RIGIDIBODY](https://github.com/Rob3rt2/UnityColisores/assets/128638269/ccd6395a-8c5c-4e3f-8b27-e1a873110786)
 
-- Script em C#:
+- Script em C#: ENTRADA
+
+![script RIGIDBODY TRIGGER ENTRADA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/f5a7a745-2f58-4919-8472-552b81587d87)
+
+- Script em C#: SAÍDA
+
 
 # Kinematic Rigidbody Trigger Collide
 Também funcionando como o seu colisor padrão sem Trigger, este colisor apresenta as mesmas diferenças que os outros colisores com Trigger, sendo um Kinematic Rigidbody, ele não sofre com a gravidade e com a física de outras colisões e sim o usuário o controla com um movimento programático. Sua Trigger funciona como todas as outras não tem efeito da física ao entrar na área de outro colisor e sim uma ação definida no script durante o tempo em que ele se mante na área de colisão do outro a partir do evento OnTriggerEnter, e depois volta ao normal quando sai da área do colisor com o evento OnTriggerExit.
