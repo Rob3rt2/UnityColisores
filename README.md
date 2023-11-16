@@ -637,7 +637,7 @@ Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verd
 ![KINEMATIC TRIGGER SAIDA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/12a3186f-cd4a-4932-810c-46dcb87b46ec)
 
 #
-## HUD e MENU
+# HUD e MENU
 Nosso trabalho vem crescendo, e como objetivo de acrescentar e trazer mais variedades para nosso jogo... Nosso projeto passado em aula é adicionar o HUD (Heads-Up Display) e o Menu em nosso projeto.
 
 Para criação, decidimos colocar uma tela de Menu mais sombria e que demonstrasse o sentimento que queriamos passar em nosso jogo. Sendo bem simples de executar, escolhemos cores e fontes para nossa cena de entrada, com botões de "Iniciar Jogo" e "Sair".
