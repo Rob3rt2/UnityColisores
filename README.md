@@ -1,4 +1,6 @@
-# Unity Colisores - LP
+# Unity Colisores - LP 
+# HUD e Menu 
+
 Esse projeto é um jogo criado na Game Engine Unity. O jogo apresenta um cenário onde o player se vê em um labirinto e terá que chegar ao fim.
 Como objetivo da atividade, o mapa possui tipos de colisores passados em aula, como: 
 - Static Collider
@@ -7,8 +9,11 @@ Como objetivo da atividade, o mapa possui tipos de colisores passados em aula, c
 - Static Trigger Collider
 - Rigidbody Trigger Collider
 - Kinematic Rigidbody Trigger Collide
+
 # Criadores
 Alunos: Letícia da Lapa e Robert Caio Gomes
+Cursando: ETEC Professor Basilídes de Godoy - Ensino Médio Integrado ao Curso Técnico de Programação de Jogos Digitais. 2ºA/2023
+
 # Requisitos
 Para ver essa cena, é preciso o Unity com a versão 2022.2.16f1
 # Instalação
@@ -630,4 +635,11 @@ Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verd
 - Script em C#: SAÍDA
   
 ![KINEMATIC TRIGGER SAIDA](https://github.com/Rob3rt2/UnityColisores/assets/128638269/12a3186f-cd4a-4932-810c-46dcb87b46ec)
+
+#
+## HUD e MENU
+Nosso trabalho vem crescendo, e como objetivo de acrescentar e trazer mais variedades para nosso jogo... Nosso projeto passado em aula é adicionar o HUD (Heads-Up Display) e o Menu em nosso projeto.
+
+Para criação, decidimos colocar uma tela de Menu mais sombria e que demonstrasse o sentimento que queriamos passar em nosso jogo. Sendo bem simples de executar, escolhemos cores e fontes para nossa cena de entrada, com botões de "Iniciar Jogo" e "Sair".
+Continuando com o HUD, decidimos criar uma barra de sanidade para o player que estará movimentando o personagem. Desenhamos nosso próprio design de barra de sanidade e adicionamos a tela por meio de códigos. Também, colocamos um cronômetro no canto superior da tela... Para quê, conforme o decorrer do jogo, o player que estará jogando deve sair do labirinto o mais rápido possível! Com o tempo passando, sua sanidade irá diminuindo até se esgotar e o "Game Over" acontecer. Corra o mais rápido possível, você terá 70 segundos para isso!.
 
