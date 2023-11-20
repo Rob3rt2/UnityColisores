@@ -16,8 +16,9 @@ Também, complementando a cena como objetivo do trabalho passado em sala de aula
 ##
 
 # Criadores
-Alunos: Letícia da Lapa e Robert Caio Gomes
-Cursando: ETEC Professor Basilídes de Godoy - Ensino Médio Integrado ao Curso Técnico de Programação de Jogos Digitais. 2ºA/2023
+**Alunos:** Letícia da Lapa e Robert Caio Gomes
+
+**Cursando:** ETEC Professor Basilídes de Godoy - Ensino Médio Integrado ao Curso Técnico de Programação de Jogos Digitais. 2ºA/2023
 
 # Requisitos
 Para ver essa cena, é preciso o Unity com a versão 2022.2.16f1
