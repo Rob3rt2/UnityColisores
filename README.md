@@ -643,14 +643,14 @@ Em nossa cena, deixamos uma lâmpada posicionada na parte de cima do quadro verd
 
 #
 # HUD e MENU
-Nosso trabalho vem crescendo, e como objetivo de acrescentar e trazer mais variedades para nosso jogo... Nosso projeto passado em aula é adicionar o HUD (Heads-Up Display) e o Menu em nosso projeto.
+Nosso trabalho vem crescendo, e como objetivo de acrescentar e trazer mais variedades para nosso jogo... Nosso projeto com instruções passadas em aula é **adicionar o HUD (Heads-Up Display) e o Menu em nosso projeto.**
 
-Para criação, decidimos colocar uma tela de Menu mais sombria e que demonstrasse o sentimento que queriamos passar em nosso jogo. Sendo bem simples de executar, escolhemos cores e fontes para nossa cena de entrada, com botões de "Iniciar Jogo" e "Sair".
-Continuando com o HUD, decidimos criar uma barra de sanidade para o player que estará movimentando o personagem. Desenhamos nosso próprio design de barra de sanidade e adicionamos a tela por meio de códigos. Também, colocamos um cronômetro no canto superior da tela... Para quê, conforme o decorrer do jogo, o player que estará jogando deve sair do labirinto o mais rápido possível! Com o tempo passando, sua sanidade irá diminuindo até se esgotar e o "Game Over" acontecer. Corra o mais rápido possível, você terá 70 segundos para isso!.
+Para criação, decidimos colocar uma tela de Menu mais sombria e que demonstrasse o sentimento que queriamos passar em nosso game. Sendo bem simples de executar, escolhemos cores e fontes para nossa cena de entrada, com botões de "Iniciar Jogo" e "Sair".
+Continuando com o HUD, decidimos criar uma barra de sanidade para o player que estará movimentando o personagem. Desenhamos nosso próprio design de barra de sanidade e adicionamos a tela por meio de códigos. Também, colocamos um cronômetro no canto superior da tela... Para quê, conforme o decorrer do jogo, **o player que estará jogando deve sair do labirinto o mais rápido possível!** Com o tempo passando, sua sanidade irá diminuindo até se esgotar e o "Game Over" acontecer. Corra o mais rápido possível, você terá 70 segundos para isso!.
 #
 ## MENU
 
-Montamos o design e **adicionamos o menu** no início do nosso Game. Essa cena possui 2 botões, "Iniciar Jogo" e "Sair".
+Montamos o design e **adicionamos o menu** no início do nosso Game. Essa cena possui 2 botões, "Iniciar Jogo" e "Sair". Que correspondem ao começo do jogo e a saída da execução do projeto.
 
 ![MENU](https://github.com/Rob3rt2/UnityColisores/assets/128638269/dad7c352-3698-4bfe-85cc-4763b321a725)
 
@@ -664,7 +664,8 @@ Em seguida, criamos uma cena para os créditos (fim de jogo), contendo: Nome da 
 ![CRÉDITOS E MORTE](https://github.com/Rob3rt2/UnityColisores/assets/128638269/6154cb60-0ccb-429e-920b-9730af11055a)
 
 ## HUD (Heads-Up Display)
-Para o HUD decidimos adicionar uma barra de sanidade (canto superior esquerdo), começando cheia com 4 barras e diminuindo com o passar do tempo. 
+
+Para o HUD, desenhamos uma barra de sanidade e decidimos adicionar (canto superior esquerdo), começando cheia com 4 barras e diminuindo com o passar do tempo. **Seu objetivo é sair do labirinto o mais rápido possível, antes que sua sanidade acabe!**
 
 ![SANIDADE 4](https://github.com/Rob3rt2/UnityColisores/assets/128638269/c0005922-355a-4af8-b578-bbd2f6a67863)
 
@@ -677,3 +678,5 @@ Para o HUD decidimos adicionar uma barra de sanidade (canto superior esquerdo), 
 **- Script:**
 
 ![SCRIPT HUD](https://github.com/Rob3rt2/UnityColisores/assets/128638269/bd1ec032-8235-4f22-a425-d3560ea6aa28)
+
+Dessa forma, finalizamos todas as instruções passadas e aguardamos por mais atualizações. :)
