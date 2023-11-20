@@ -1,14 +1,19 @@
-# Unity Colisores - LP 
-# HUD e Menu 
+# Unity Colisores - LP & HUD e Menu
 
+ #### Unity Colisores 
 Esse projeto é um jogo criado na Game Engine Unity. O jogo apresenta um cenário onde o player se vê em um labirinto e terá que chegar ao fim.
 Como objetivo da atividade, o mapa possui tipos de colisores passados em aula, como: 
+
 - Static Collider
 - Rigidbody Collider
 - Kinematic Rigidbody Collider
 - Static Trigger Collider
 - Rigidbody Trigger Collider
 - Kinematic Rigidbody Trigger Collide
+
+ #### HUD e MENU
+Também, complementando a cena como objetivo do trabalho passado em sala de aula, recentemente **adicionando o HUD (Heads-Up Display) e o MENU do nosso game.** (Disponibilizado todo o passoa passo no fim desse README)
+##
 
 # Criadores
 Alunos: Letícia da Lapa e Robert Caio Gomes
@@ -642,4 +647,33 @@ Nosso trabalho vem crescendo, e como objetivo de acrescentar e trazer mais varie
 
 Para criação, decidimos colocar uma tela de Menu mais sombria e que demonstrasse o sentimento que queriamos passar em nosso jogo. Sendo bem simples de executar, escolhemos cores e fontes para nossa cena de entrada, com botões de "Iniciar Jogo" e "Sair".
 Continuando com o HUD, decidimos criar uma barra de sanidade para o player que estará movimentando o personagem. Desenhamos nosso próprio design de barra de sanidade e adicionamos a tela por meio de códigos. Também, colocamos um cronômetro no canto superior da tela... Para quê, conforme o decorrer do jogo, o player que estará jogando deve sair do labirinto o mais rápido possível! Com o tempo passando, sua sanidade irá diminuindo até se esgotar e o "Game Over" acontecer. Corra o mais rápido possível, você terá 70 segundos para isso!.
+#
+## MENU
 
+Montamos o design e **adicionamos o menu** no início do nosso Game. Essa cena possui 2 botões, "Iniciar Jogo" e "Sair".
+
+![MENU](https://github.com/Rob3rt2/UnityColisores/assets/128638269/dad7c352-3698-4bfe-85cc-4763b321a725)
+
+## CRÉDITOS
+Em seguida, criamos uma cena para os créditos (fim de jogo), contendo: Nome da Instituição, Nome do curso, Nome dos Alunos com suas contribuições para o projeto, Nome da Orientadora, Asset Principais Utilizados e 3 botões para "Voltar", "Reiniciar" e "Sair". 
+
+![CRÉDITOS](https://github.com/Rob3rt2/UnityColisores/assets/128638269/8ea3024c-1998-494c-8dee-d7fbac90f78b)
+
+**- Script de Ambos:**
+
+![CRÉDITOS E MORTE](https://github.com/Rob3rt2/UnityColisores/assets/128638269/6154cb60-0ccb-429e-920b-9730af11055a)
+
+## HUD (Heads-Up Display)
+Para o HUD decidimos adicionar uma barra de sanidade (canto superior esquerdo), começando cheia com 4 barras e diminuindo com o passar do tempo. 
+
+![SANIDADE 4](https://github.com/Rob3rt2/UnityColisores/assets/128638269/c0005922-355a-4af8-b578-bbd2f6a67863)
+
+![SANIDADE 3](https://github.com/Rob3rt2/UnityColisores/assets/128638269/81609957-5d9d-4809-8906-7d2708741bd3)
+
+![SANIDADE 2](https://github.com/Rob3rt2/UnityColisores/assets/128638269/45fb64df-b93b-41c9-98c4-ec203e9237d4)
+
+![SANIDADE 1](https://github.com/Rob3rt2/UnityColisores/assets/128638269/81ea98bf-7c3c-4738-95c8-ad5c7c04f52b)
+
+**- Script:**
+
+![SCRIPT HUD](https://github.com/Rob3rt2/UnityColisores/assets/128638269/bd1ec032-8235-4f22-a425-d3560ea6aa28)
