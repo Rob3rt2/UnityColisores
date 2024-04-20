@@ -16,7 +16,7 @@ Também, complementando a cena como objetivo do trabalho passado em sala de aula
 ##
 
 # Criadores
-**Alunos:** Letícia da Lapa 
+**Aluna:** Letícia da Lapa 
 
 **Aluno:** Robert Caio Gomes
 
