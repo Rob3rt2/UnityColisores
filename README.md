@@ -26,7 +26,7 @@ Também, complementando a cena como objetivo do trabalho passado em sala de aula
 Para ver essa cena, é preciso o Unity com a versão 2022.2.16f1
 # Instalação
 1. Clonar o projeto (Pasta está zipada para preservação do projeto construído na Unity, possuindo Scripts no C# e o projeto da Unity).
-- Link da pasta no Drive : https://drive.google.com/drive/folders/1rYuQksweBlwN2JRGTPiba1RAJaxoatsK?usp=sharing
+- Link da pasta no Drive : https://drive.google.com/drive/folders/11ySoPMGxFu0ajMC4tXVKVN6qu7mjuMVf?usp=drive_link
 2. Assistir Gameplay disponível no Youtube.
   
 ##### Gameplay
